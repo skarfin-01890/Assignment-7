@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://mockmind-api.uifaces.co/content/human/128.jpg",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "almost_due",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Smith",
+    "picture": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80",
+    "email": "sarah@example.com",
+    "days_since_contact": 3,
+    "status": "on_track",
+    "tags": ["work", "teammate"],
+    "bio": "Colleague from office. Works in marketing.",
+    "goal": 10,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMZg5n7tqMDmYqiwHYDTxW878gOtvoIsBCuQ&s",
+    "email": "michael@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["gym", "friend"],
+    "bio": "Workout partner at the gym.",
+    "goal": 15,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 4,
+    "name": "Emily Johnson",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE0tzHAHA6rI5IMcxlfq94ZNnywGep1OdREQ&s",
+    "email": "emily@example.com",
+    "days_since_contact": 6,
+    "status": "almost_due",
+    "tags": ["family"],
+    "bio": "Cousin. We meet during holidays.",
+    "goal": 7,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlimH-52ei6mqDPohL-qaT0VuDdTK3B7dJZg&s",
+    "email": "david@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["business", "client"],
+    "bio": "Client from freelance project.",
+    "goal": 10,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 6,
+    "name": "Sophia Martinez",
+    "picture": "https://mockmind-api.uifaces.co/content/human/219.jpg",
+    "email": "sophia@example.com",
+    "days_since_contact": 4,
+    "status": "on_track",
+    "tags": ["school", "friend"],
+    "bio": "Friend from high school.",
+    "goal": 12,
+    "next_due_date": "2025-07-23"
+  },
+  {
+    "id": 7,
+    "name": "James Anderson",
+    "picture": "https://mockmind-api.uifaces.co/content/human/80.jpg",
+    "email": "james@example.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["travel", "buddy"],
+    "bio": "Travel companion for trips.",
+    "goal": 20,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 8,
+    "name": "Olivia Thomas",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VQLYQnwDR3vhiOz3aMRmhiJ5J82gyQO2_Q&s",
+    "email": "olivia@example.com",
+    "days_since_contact": 2,
+    "status": "on_track",
+    "tags": ["neighbor"],
+    "bio": "Lives next door. Often chat in evenings.",
+    "goal": 8,
+    "next_due_date": "2025-07-27"
+  },
+  {
+    "id": 9,
+    "name": "Daniel Taylor",
+    "picture": "https://images.unsplash.com/photo-1523901056858-1b233826cb15?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHVpJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D",
+    "email": "daniel@example.com",
+    "days_since_contact": 13,
+    "status": "almost_due",
+    "tags": ["project", "partner"],
+    "bio": "Worked together on a startup project.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 10,
+    "name": "Isabella Moore",
+    "picture": "https://img.freepik.com/free-photo/portrait-beautiful-woman-smiling-shot_329181-17464.jpg",
+    "email": "isabella@example.com",
+    "days_since_contact": 1,
+    "status": "on_track",
+    "tags": ["friend", "online"],
+    "bio": "Met through an online community.",
+    "goal": 7,
+    "next_due_date": "2025-07-30"
+  }
+]

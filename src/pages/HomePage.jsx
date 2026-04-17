@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {  } from 'react';
+import Banner from '../Components/Banner';
+import AllFriends from '../Components/AllFriends';
 
-const HomePage = () => {
-	return (
-		<div>
-			<h2>This is home page</h2>
-		</div>
+const HomePage = ({fetchPromsie}) => {
+
+
+	return(
+
+		<>
+
+<Banner></Banner>
+<AllFriends fetchPromsie={fetchPromsie}></AllFriends>
+
+		</>
+
 	);
 };
 

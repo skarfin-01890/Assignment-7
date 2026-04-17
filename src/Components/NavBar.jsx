@@ -16,9 +16,8 @@ const NavBar = () => {
   <div className="flex-none">
 
           <ul className="bg-base-100 space-x-4 flex">
-            <NavLink to={'/'} className={  ({isActive})=>{
-			return` text-white px-3 flex justify-center items-center ${isActive?"bg-[#244D3F]  text-white p-3":"bg-white text-black p-3"}
-			 ` }}><FaHome />Home</NavLink>
+            <NavLink to={'/'} end className={  ({isActive})=>{
+			return` px-3 flex justify-center items-center ${isActive?"bg-[#244D3F]  text-white p-3":"bg-white text-black p-3"}` }}><FaHome />Home</NavLink>
              <NavLink to={'/time'}className={  ({isActive})=>{
 			return` flex gap-1 items-center ${isActive?"bg-[#244D3F] text-white p-3":"bg-white text-black p-3"} ` }}><RiTimeLine />Timeline</NavLink>
 
