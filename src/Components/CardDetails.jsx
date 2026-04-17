@@ -1,13 +1,28 @@
-import React, { use } from 'react';
+import React, { use, useContext,  } from 'react';
 import { FaVideo } from 'react-icons/fa';
 import { FiArchive } from 'react-icons/fi';
 import { IoMdText } from 'react-icons/io';
 import { MdOutlineAddIcCall } from 'react-icons/md';
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
 import { useParams } from 'react-router';
+import { TimeLineContext } from './context/Context';
 
 const CardDetails = ({fetchPromsie}) => {
 	const data=use(fetchPromsie);
+	const {timeline, setTimeline}=useContext(TimeLineContext)
+	const {text,setText}=useContext(TimeLineContext);
+	const {audio,setAudio}=useContext(TimeLineContext);
+	const handleText=()=>{
+		setText([...text, expectedCard])
+	}
+	const handleAudio=()=>{
+setAudio([...audio,expectedCard])
+	}
+
+	const handleTimeline=()=>{
+setTimeline([...timeline,setTimeline])
+	}
+
 
 	const {id}=useParams();
 	const expectedCard=data.find((card)=>card.id==id)
@@ -55,15 +70,15 @@ const CardDetails = ({fetchPromsie}) => {
 
 
 
-<div className='card w-87 h-17 bg-base-100  shadow-sm mt-6'>
-<h1 className='text-center items-center flex justify-center pt-5 text-2xl font-semibold gap-2'><RiNotificationSnoozeLine />Snooze 2 Weeks</h1>
-</div>
+<button className='card w-87 h-17 bg-base-100 btn cursor-pointer shadow-sm mt-6'>
+<div className='text-center  items-center flex justify-center pt-5 text-2xl font-semibold gap-2'><RiNotificationSnoozeLine />Snooze 2 Weeks</div>
+</button>
 
 
-<div className='card w-87 h-17 bg-base-100  shadow-sm mt-6'>
-<h1 className='text-center items-center flex justify-center pt-5 text-2xl font-semibold gap-2'><FiArchive />Archive</h1></div>
-<div className='card w-87 h-17 bg-base-100  shadow-sm mt-6'>
-<h1 className='text-center text-red-500 items-center flex justify-center pt-5 text-2xl font-semibold gap-2'><RiDeleteBinLine />Delete</h1></div>
+<button className='card w-87 h-17 bg-base-100 btn cursor-pointer shadow-sm mt-6'>
+<div className='text-center items-center flex justify-center pt-5 text-2xl font-semibold gap-2'><FiArchive />Archive</div></button>
+<button className='card w-87 h-17 bg-base-100 btn cursor-pointer  shadow-sm mt-6'>
+<div className='text-center  text-red-500 items-center flex justify-center pt-5 text-2xl font-semibold gap-2'><RiDeleteBinLine />Delete</div></button>
 
 
 
@@ -93,6 +108,7 @@ const CardDetails = ({fetchPromsie}) => {
 
 
 
+
 			</div>
 			<div className='card w-250 h-27 bg-base-100 p-3 shadow-sm mt-10'>
 			<div className='flex justify-between'>
@@ -106,18 +122,18 @@ const CardDetails = ({fetchPromsie}) => {
 			<div className='card w-250 h-60 bg-base-100  shadow-sm mt-10 p-5'>
 			<h3 className='text-xl'>Quick Check in</h3>
 <div className='flex justify-between'>
-			<div className='card w-60 h-h-30 bg-gray-100 text-center shadow-sm mt-6'>
+			<button onClick={handleAudio} className='card btn cursor-pointer w-60 h-30 bg-gray-100 text-center shadow-sm mt-6'>
 <h1 className='text-center items-center flex justify-center flex-col mt-10'><MdOutlineAddIcCall /></h1>
 <p className='text-gray-500 text-2xl'>Call</p>
-</div>
-			<div className='card w-60 h-h-30 bg-gray-100 text-center shadow-sm mt-6'>
+</button>
+			<button onClick={handleText}  className='card btn cursor-pointer w-60 h-30 bg-gray-100 text-center shadow-sm mt-6'>
 <h1 className='text-center items-center flex justify-center flex-col mt-10'><IoMdText /></h1>
 <p className='text-gray-500 text-2xl'>Text</p>
-</div>
-			<div className='card w-60 h-30 bg-gray-100 text-center shadow-sm mt-6'>
+</button>
+			<button onClick={handleTimeline} className='card w-60 h-30 bg-gray-100 text-center shadow-sm mt-6 cursor-pointer btn '>
 <h1 className='text-center items-center flex justify-center flex-col mt-10'><FaVideo /></h1>
 <p className='text-gray-500 text-2xl'>Video</p>
-</div>
+</button>
 </div>
 			</div>
 

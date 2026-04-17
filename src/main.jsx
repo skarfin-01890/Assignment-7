@@ -10,6 +10,7 @@ import TimeLine from './pages/TimeLine.jsx';
 import Stats from './pages/Stats.jsx';
 import CardDetails from './Components/CardDetails.jsx';
 import ErrorPge from './Components/ErrorPge.jsx';
+import Context from './Components/context/Context.jsx';
 
 
 const fetchPromsie=fetch('/data.json').then(res=>res.json());
@@ -56,6 +57,8 @@ Component:Stats
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+  <Context>
 <RouterProvider router={router} />,
+</Context>
   </StrictMode>,
 )
