@@ -32,8 +32,8 @@ toast.success('You clicked on the Video button')
 	const expectedCard=data.find((card)=>card.id==id)
 	console.log(expectedCard);
 
-	return (<div className='container mx-auto mt-12 grid grid-cols-4'>
-<div className='col-span-1'>
+	return (<div className='container mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 '>
+<div className='lg:col-span-1'>
 <div className=''>
 
 
@@ -88,12 +88,12 @@ toast.success('You clicked on the Video button')
 
 
 			</div>
-			<div className='col-span-3'>
+			<div className='col-span-1 md:col-span-1  lg:col-span-3'>
 
 
 
 
-<div className='grid grid-cols-3'>
+<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
 
 				<div className='card w-57 h-33  text-center shadow-sm mt-6'>
 <h1 className='pt-5 text-3xl font-semibold gap-2'>62</h1>
@@ -115,7 +115,7 @@ toast.success('You clicked on the Video button')
 
 			</div>
 			<div className='card w-250 h-27 bg-base-100 p-3 shadow-sm mt-10'>
-			<div className='flex justify-between'>
+			<div className='flex-wrap lg:flex justify-between'>
 				<h3>Relationship Goal</h3>
 				<button className='btn'>Edit</button>
 			</div>
@@ -123,14 +123,14 @@ toast.success('You clicked on the Video button')
 
 			</div>
 
-			<div className='card w-250 h-60 bg-base-100  shadow-sm mt-10 p-5'>
+			<div className='card   bg-base-100  shadow-sm mt-10 p-5 lg:w-250 h-60'>
 			<h3 className='text-xl'>Quick Check in</h3>
-<div className='flex justify-between'>
+<div className='grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3'>
 			<button onClick={handleAudio} className='card btn cursor-pointer w-60 h-30 bg-gray-100 text-center shadow-sm mt-6'>
 <h1 className='text-center items-center flex justify-center flex-col mt-10'><MdOutlineAddIcCall /></h1>
 <p className='text-gray-500 text-2xl'>Call</p>
 </button>
-			<button onClick={handleText}  className='card btn cursor-pointer w-60 h-30 bg-gray-100 text-center shadow-sm mt-6'>
+			<button onClick={handleText}  className='card btn flex flex-col cursor-pointer w-60 h-30 bg-gray-100 text-center shadow-sm mt-6'>
 <h1 className='text-center items-center flex justify-center flex-col mt-10'><IoMdText /></h1>
 <p className='text-gray-500 text-2xl'>Text</p>
 </button>
