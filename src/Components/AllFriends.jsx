@@ -12,7 +12,7 @@ const AllFriends = ({fetchPromsie}) => {
 <div className=' grid grid-cols-4 space-y-3 container mx-auto gap-3 space-x-2'>
 		{
 data.map((info,ind)=>{
-	return <Link to={`/info/${info.id}`} className="card bg-base-100  shadow-sm " key={ind}>
+	return <Link to={`/card/${info.id}`} className="card bg-base-100  shadow-sm " key={ind}>
   <figure className="px-10 pt-10">
     <img className="w-32 h-32 rounded-full object-cover"src={info.picture}
       alt="ui faces" />
