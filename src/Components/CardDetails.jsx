@@ -6,6 +6,7 @@ import { MdOutlineAddIcCall } from 'react-icons/md';
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
 import { useParams } from 'react-router';
 import { TimeLineContext } from './context/Context';
+import { toast } from 'react-toastify';
 
 const CardDetails = ({fetchPromsie}) => {
 	const data=use(fetchPromsie);
@@ -14,13 +15,16 @@ const CardDetails = ({fetchPromsie}) => {
 	const {audio,setAudio}=useContext(TimeLineContext);
 	const handleText=()=>{
 		setText([...text, expectedCard])
+		toast.success('You clicked on the text button')
 	}
 	const handleAudio=()=>{
 setAudio([...audio,expectedCard])
+toast.success('You clicked on the Call button')
 	}
 
 	const handleTimeline=()=>{
 setTimeline([...timeline,setTimeline])
+toast.success('You clicked on the Video button')
 	}
 
 

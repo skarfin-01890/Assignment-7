@@ -13,7 +13,7 @@ const TimeLine = () => {
 console.log(timeline);
 	return (
 		<div className='container mx-auto mt-24'>
-		<h1 className='font-bold text-4xl'>Timeline</h1>
+		<h1 className='font-bold text-5xl'>Timeline</h1>
 			{
 
 				timeline.map((time,ind)=>{
