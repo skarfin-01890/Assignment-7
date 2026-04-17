@@ -9,7 +9,7 @@ const AllFriends = ({fetchPromsie}) => {
 		<div className='container mx-auto mt-20'>
 			<h1 className='font-semibold mb-4 text-4xl'>Your Friends</h1>
 		</div>
-<div className=' grid grid-cols-4 space-y-3 container mx-auto gap-3 space-x-2'>
+<div className=' grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 space-y-3 container mx-auto gap-3 space-x-2'>
 		{
 data.map((info,ind)=>{
 	return <Link to={`/card/${info.id}`} className="card bg-base-100  shadow-sm " key={ind}>

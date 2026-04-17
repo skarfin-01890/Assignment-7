@@ -12,7 +12,7 @@ const Banner = () => {
 relationships that matter most.</p>
 <button className='btn bg-[#244D3F] text-white p-3 px-5 mt-8'><FiPlus />Add Friend</button>
 </div>
-<div className='items-center grid grid-cols-4 justify-center space-x-6 mt-10  container mx-auto'>
+<div className='items-center grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-2 justify-center space-x-6 mt-10  container mx-auto'>
 	<div className='bg-base-100 shadow-sm px-20 py-9  text-center '>
 		<h2 className='font-bold text-3xl'>10</h2>
 		<p className='whitespace-nowrap'>Total Friends</p>
